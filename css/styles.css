@@ -50,11 +50,19 @@ body {
     background-color: var(--background-color);
 }
 
-.container{
+.container {
+    max-width: 428px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .container{
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-}
+} */
 
 .section{
     padding-top: 120px;
@@ -172,21 +180,28 @@ align-items: center;
 /*---------------HERO---------------*/
 .hero {
     background-color: var(--color-main-text);   
-    background-image: var(--bg-gradient), url(../images/hero-bg.jpg); 
+    background-image: var(--bg-gradient), url(../images/hero-bg-mob.jpg); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     max-width: 1440px;;            
 }
 
-.hero-container{        
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: var(--bg-gradient), url(../images/hero-bg-mob2x.jpg);
+    }
 }
 
 .hero-title {      
-    font-size: 56px;
-    line-height: 1.07;
+/*    font-size: 56px;
+    line-height: 1.07;*/
+    font-size: 36px;
+    line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--color-fon-text-button);
