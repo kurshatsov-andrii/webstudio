@@ -59,12 +59,6 @@ body {
     margin-right: auto;
 }
 
-/* .container{
-    max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
-} */
-
 .section{
     padding-top: 96px;
     padding-bottom: 96px;
@@ -245,7 +239,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 .benefits-menu {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 24px;
@@ -565,30 +558,44 @@ border-color: var(--color-hover);
 
 .footer-main{
     background: var(--color-main-text);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
-.text-footer {      
+ .logo-footer {
+    margin: 0 auto;    
+} 
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    text-align: center;    
+}
+
+.logo-footer-text {
+    color: var(--color-footer-fon);
+}
+
+.text-footer {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-footer-fon);
     margin-top: 16px;
-    max-width: 264px;
-}
-
-.logo-footer-text {
-    color: var(--color-footer-fon);    
+    max-width: 264px;  
+    margin-bottom: 72px;
 }
 
 .logo-footer-container{
     display: flex;
     align-items: baseline;
-    justify-content: baseline;
+    justify-content: baseline;    
+    flex-wrap: wrap;
 }
 
 .social{
-    margin-left: 120px;    
+    margin: 0 auto;
+    text-align:center;  
+    margin-bottom: 72px;
 }
 
 .social-title {
@@ -637,7 +644,8 @@ color: var(--background-color);
 }
 
 .subscribe {
-    margin-left:80px;
+    margin: 0 auto;
+    text-align:center;
 }
 
 .subscribe-title {    
@@ -649,24 +657,24 @@ color: var(--background-color);
 }
 
 .subscribe-form {
-    display: flex;
+    display: block;     
 }
 
 .subscribe-text{
     border: 1px solid var(--background-color);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);*/
     border-radius: 4px;
-    outline: none;    
-    width: 264px;
+    outline: none;        
+    width: 100%;
     height: 40px;
     background-color: transparent;
     padding-left: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
     color: var(--background-color);  
-    font-size: 12px;
+    font-size: 16px;
     line-height: 2.0;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.04em;    
 }
 
 .subscribe-text::placeholder {
@@ -674,11 +682,12 @@ color: var(--background-color);
     font-size: 12px;
     line-height: 2.0;
     align-items: center;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.04em;    
+    opacity: 0.6;
 }
 
 .subscribe-label {
-    margin-right: 24px;
+    margin-right: 24px;    
 }
 
 .subscribe-btn {
@@ -693,6 +702,7 @@ color: var(--background-color);
     color: var(--color-fon-text-button);
     border: none;
     transition: background-color var(--transform-hover-focus), box-shadow var(--transform-hover-focus);
+    margin-top: 16px;
 }
 
 .subscribe-btn:hover,
