@@ -34,6 +34,7 @@ img{
     display: block;
     max-width: 100%;
     height: auto;
+    width: 100%;
 }
 
 .list{
@@ -65,8 +66,8 @@ body {
 } */
 
 .section{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 /*---------------HEADER---------------*/
@@ -251,64 +252,33 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .benefits-menu-item {
-    width: calc((100% - 72px) / 4);
+    flex-basis: 100%;    
 }
 
 .benefits-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--color-main-text);
     margin-bottom: 8px;
 }
 
 .benefits-text {
+    font-weight: 500;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.01em;
-    color: var(--color-second-text);
-    max-width: 264px;
+    color: var(--color-second-text);    
 }
 
 .benefits-svg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-footer-fon);
-    border-radius: 4px;
-    width: 264px;
-    height: 112px;
-    margin-bottom: 8px;
+    display: none;
 }
 
 /*---------------WE DOING---------------*/
 .we-doing {
-    padding-bottom: 120px;
-}
-
-.we-doing-title {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--color-main-text);    
-}
-
-.we-doing-menu {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    margin-top: 72px;    
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.we-doing-menu-item {
-    width: calc((100% - 48px) / 3);
-}
-
-.we-doing-img {
+    display: none;
 }
 
 /*---------------TEAM---------------*/
@@ -339,7 +309,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: var(--color-fon-text-button);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-    width: calc((100% - 72px) / 4);
+    flex-basis: 100%;    
 }
 
 .team-img {
@@ -428,12 +398,12 @@ height: 40px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 24px;    
+    gap: 16px;    
 }
 
 .customers-list-item {  
     width: calc((100% - 120px) / 6);
-    width: 168px;
+    width: 190px;
     height: 88px;
 }
 
