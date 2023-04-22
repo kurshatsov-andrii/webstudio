@@ -196,7 +196,13 @@
     font-size: 12px;
 }    
 
-/*-------CONTAINER 1200px-----------------*/
+/*-----------MODAL WINDOW--------*/
+.modal {
+    width: 408px;
+    height: 586px;
+}
+
+/*-------CONTAINER 1158px-----------------*/
 @media screen and (min-width: 1200px) {
     .container {
         max-width: 1158px;
@@ -356,4 +362,8 @@
     opacity: 1;
 }
 
+/*-----------MODAL WINDOW--------*/
+.modal {
+    height: 584px;
+}
 }
