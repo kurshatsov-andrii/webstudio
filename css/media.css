@@ -22,6 +22,87 @@
         max-width: 768px;
     }
 
+    /*---------------HEADER--------------*/
+        .menu-button{
+            display: none;
+        }
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-left: 76px;
+        }
+    
+        .menu-item {}
+    
+        .menu-item-link {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: var(--color-main-text);
+            transition: color var(--transform-hover-focus);
+        }
+    
+        .menu-item-address {
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: var(--color-second-text);
+            transition: color var(--transform-hover-focus);
+        }
+    
+        .menu-item-link:hover,
+        .menu-item-link:focus,
+        .menu-item-address:hover,
+        .menu-item-address:focus {
+            color: var(--color-hover);    
+        }
+    .address-main {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        font-style: normal;        
+        color: var(--color-second-text);
+        margin-left: auto;
+        display: block;
+        }
+    
+        .contact-main {
+            color: var(--color-second-text);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-direction: column;
+        }
+    
+        .email {
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: var(--color-second-text);
+        }
+    
+        .tel {
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: var(--color-second-text);
+        }
+    
+        .current {
+            position: relative;
+            color: var(--color-hover);
+        }
+    
+        .current::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -40px;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: var(--color-hover);
+        }
     /*---------------HERO---------------*/
     .hero {    
     background-image: var(--bg-gradient), url(../images/hero-bg-tab.jpg);
@@ -126,6 +207,23 @@
     padding-bottom: 120px;
 }
 
+/*--------------HEADER-----------------*/
+.contact-main {
+    gap: 40px;
+    flex-direction: row;
+}
+
+.current::after {
+    content: '';
+    bottom: -28px;
+}
+
+.address-main {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
 /*---------------HERO---------------*/
 .hero {
     padding-top: 188px;

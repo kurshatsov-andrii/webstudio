@@ -68,6 +68,7 @@ body {
 .header-main-container{
 display: flex;
 align-items: center;
+justify-content: space-between;
 }
 
 .header-main {
@@ -78,7 +79,7 @@ align-items: center;
 
 .nav-main {
     display: flex;
-    align-items: center;
+    align-items: center;    
 }
 
 .logo {
@@ -96,80 +97,8 @@ align-items: center;
     color: var(--color-main-text);
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.menu-item {
-}
-
-.menu-item-link { 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--color-main-text); 
-    transition: color var(--transform-hover-focus);
-}
-
-.menu-item-address{
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--color-second-text);
-    transition: color var(--transform-hover-focus);
-}
-
-.menu-item-link:hover,
-.menu-item-link:focus,
-.menu-item-address:hover,
-.menu-item-address:focus
-{
-    color: var(--color-hover);    
-}
-
-.address-main {    
-    font-style: normal;      
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--color-second-text);
-    margin-left: auto;
-}
-
-.contact-main {    
-    color: var(--color-second-text);
-    display: flex;
-    align-items: center;    
-    gap: 40px;
-}
-
-.email {        
-    line-height: 1.5;         
-    letter-spacing: 0.02em;
-    color: var(--color-second-text);
-}
-
-.tel {    
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--color-second-text);
-}
-
-.current{
-    position: relative;
-    color: var(--color-hover);
-}
-
-.current::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -28px;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--color-hover);
+.menu, .address-main {
+    display: none;
 }
 
 /*---------------HERO---------------*/
@@ -181,7 +110,7 @@ align-items: center;
     background-size: cover;
     padding-top: 112px;
     padding-bottom: 112px;
-    max-width: 1440px;;            
+    /* max-width: 1440px;             */
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -568,7 +497,7 @@ border-color: var(--color-hover);
 
 .logo {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto; 
     text-align: center;    
 }
 
@@ -967,6 +896,18 @@ overflow: hidden;
 .link-policy:hover,
 .link-policy:focus {
     color: var(--color-hover);
+}
+
+/*-----------MENU BURGER--------------*/
+
+.menu-button{
+    border: transparent;
+    background-color: transparent;
+}
+
+.menu-icon{    
+    stroke: var(--color-main-text);
+    transition: stroke var(--transform-hover-focus);
 }
 /*-----------HIDDEN TEXT---------------------*/
 
