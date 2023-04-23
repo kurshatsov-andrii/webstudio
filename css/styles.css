@@ -369,7 +369,7 @@ border-color: var(--color-hover);
     display: flex;
     align-items: center;
     gap: 24px;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
     margin-bottom: 72px;
 }
@@ -397,13 +397,13 @@ border-color: var(--color-hover);
 .projects-menu {
     display: flex;
     align-items: center;
-    gap: 48px 24px;
+    gap: 48px;
     justify-content: center;
     flex-wrap: wrap;    
 }
 
 .projects-menu-item {
-    width: calc((100% - 48px) / 3);       
+    width: 100%;       
 }
 
 .projects-color-wrap{
@@ -916,7 +916,7 @@ overflow: hidden;
     top: 0;
     width: 428px;
     height: 796px;
-    z-index: 2;
+    z-index: 2; 
     padding: 80px 35px 40px 40px;
     background-color: var(--background-color);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -934,8 +934,9 @@ overflow: hidden;
     align-items: center;
     width: 24px;
     height: 24px;
-    background-color: var(--color-border-button);
+    background-color: var(--background-color); 
     border: 1px solid rgba(0, 0, 0, 0.1);
+    opacity: 1;  
     border-radius: 50%;
     transition: background-color var(--transform-hover-focus);
 }
@@ -969,10 +970,15 @@ overflow: hidden;
     color: var(--color-main-text);
 }
 
-.mob-menu-item-link {}
+.mob-menu-item-link {
+    color: var(--color-main-text);
+}
 
+.current-mob {
+    color: var(--color-hover);
+}
 
-.mob-address-main {    
+.mob-address-main {       
 }
 
 .mob-menu-contact-main {
@@ -980,6 +986,7 @@ overflow: hidden;
     gap: 40px;
     flex-direction: column;
 }
+
 
 .mob-menu-email {
     font-weight: 500;
@@ -989,7 +996,15 @@ overflow: hidden;
     color: var(--color-second-text);    
 }
 
-.mob-menu-item-address {}
+.mob-menu-item-email {
+    color: var(--color-second-text);
+    font-style: normal;
+}
+
+.mob-menu-item-tel {
+    color: var(--color-logo-button);
+    font-style: normal;
+}
 
 .mob-menu-tel {
     font-weight: 700;
@@ -1038,6 +1053,11 @@ overflow: hidden;
     fill: var(--color-footer-fon);
 }
 
+.mob-menu.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 /*-----------HIDDEN TEXT---------------------*/
 
 .visuallyhidden {

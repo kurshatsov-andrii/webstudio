@@ -15,6 +15,7 @@
 .customers-list {
     gap: 72px 16px;
 }
+}
 
 /*-------CONTAINER 768px-----------------*/
 @media screen and (min-width: 768px) {
@@ -202,6 +203,21 @@
     height: 586px;
 }
 
+/*-----------PORTFOLIO--------*/
+.projects-menu-item {
+    width: calc((100% - 24px) / 2);
+}
+
+.projects-menu {
+    gap: 72px 24px;
+    justify-content: left;
+}
+
+.projects-menu-button {
+    justify-content: center;
+}
+}
+
 /*-------CONTAINER 1158px-----------------*/
 @media screen and (min-width: 1200px) {
     .container {
@@ -365,5 +381,15 @@
 /*-----------MODAL WINDOW--------*/
 .modal {
     height: 584px;
+}
+
+/*-----------PORTFOLIO--------*/
+.projects-menu-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.projects-menu {
+    gap: 48px 24px;
+    justify-content: center;
 }
 }
