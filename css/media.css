@@ -15,6 +15,11 @@
 .customers-list {
     gap: 72px 16px;
 }
+
+.mob-social-list-team {
+    gap: 56px;
+}
+
 }
 
 /*-------CONTAINER 768px-----------------*/
@@ -24,9 +29,15 @@
     }
 
     /*---------------HEADER--------------*/
+        .header-main {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+
         .menu-button{
             display: none;
         }
+
         .menu {
             display: flex;
             align-items: center;
@@ -46,8 +57,9 @@
         }
     
         .menu-item-address {
-            line-height: 1.5;
-            letter-spacing: 0.02em;
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.04em;
             color: var(--color-second-text);
             transition: color var(--transform-hover-focus);
         }
@@ -78,14 +90,16 @@
         }
     
         .email {
-            line-height: 1.5;
-            letter-spacing: 0.02em;
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.04em;
             color: var(--color-second-text);
         }
     
         .tel {
-            line-height: 1.5;
-            letter-spacing: 0.02em;
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.04em;
             color: var(--color-second-text);
         }
     
@@ -98,7 +112,7 @@
             content: '';
             position: absolute;
             left: 0;
-            bottom: -40px;
+            bottom: -28px;
             width: 100%;
             height: 4px;
             border-radius: 2px;
@@ -129,6 +143,10 @@
 
 .benefits-menu {
     gap: 72px 24px;
+}
+
+.benefits-subtitle {
+    text-align: left;
 }
 
 /*---------------TEAM---------------*/
@@ -230,18 +248,36 @@
 }
 
 /*--------------HEADER-----------------*/
+.header-main {
+    padding-top: 24px;
+    padding-bottom: 24px; 
+}
+
 .contact-main {
     gap: 40px;
     flex-direction: row;
 }
 
-.current::after {
-    content: '';
-    bottom: -28px;
-}
-
 .address-main {
     font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.menu-item-address {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.email {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.tel {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -381,6 +417,7 @@
 /*-----------MODAL WINDOW--------*/
 .modal {
     height: 584px;
+    width: 392px;
 }
 
 /*-----------PORTFOLIO--------*/
@@ -392,4 +429,5 @@
     gap: 48px 24px;
     justify-content: center;
 }
+
 }

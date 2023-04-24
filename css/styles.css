@@ -184,6 +184,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     letter-spacing: 0.02em;
     color: var(--color-main-text);
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .benefits-text {
@@ -574,7 +575,8 @@ color: var(--background-color);
 
 .subscribe {
     margin: 0 auto;
-    text-align:center;
+    text-align:center; 
+    /* width: 100%; */
 }
 
 .subscribe-title {    
@@ -586,7 +588,11 @@ color: var(--background-color);
 }
 
 .subscribe-form {
-    display: block;     
+    display: block; 
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;      */
 }
 
 .subscribe-text{
@@ -616,7 +622,7 @@ color: var(--background-color);
 }
 
 .subscribe-label {
-    margin-right: 24px;    
+     margin-right: 24px;     
 }
 
 .subscribe-btn {
@@ -661,6 +667,7 @@ color: var(--background-color);
     height: 100%;
     background-color:rgba(46, 47, 66, 0.4);
     transition: opacity var(--transform-hover-focus), visibility var(--transform-hover-focus);
+    overflow: auto;
 }
 
 .modal {
@@ -669,8 +676,9 @@ color: var(--background-color);
     left:50%;
     transform: translate(-50%, -50%) scaleY(1);
     transition: transform var(--transform-hover-focus);
-    width: 392px;
-    height: 586px;
+    /* width: 392px; */
+    width: calc(100% - 32px);
+    min-height: 576px;
     background-color:#FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -734,6 +742,7 @@ overflow: hidden;
 .modal-form {
     display: flex;
     flex-direction: column;
+    overflow: auto;
 }
 
 .modal-form-input {
@@ -914,8 +923,8 @@ overflow: hidden;
 .mob-menu {
     position: fixed;
     top: 0;
-    width: 428px;
-    height: 796px;
+    width: 100vw;
+    height: 100vh;    
     z-index: 2; 
     padding: 80px 35px 40px 40px;
     background-color: var(--background-color);
@@ -1018,7 +1027,7 @@ overflow: hidden;
 .mob-social-list-team {
     display: flex;
     justify-content: start;
-    gap: 56px;
+    gap: 12%;
     margin-top: 48px;
 }
 
