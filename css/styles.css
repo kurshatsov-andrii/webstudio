@@ -622,7 +622,7 @@ color: var(--background-color);
 }
 
 .subscribe-label {
-     margin-right: 24px;     
+     margin-right: 0;     
 }
 
 .subscribe-btn {
