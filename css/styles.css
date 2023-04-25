@@ -119,11 +119,10 @@ justify-content: space-between;
     .hero {
         background-image: var(--bg-gradient), url(../images/hero-bg-mob2x.jpg);
     }
+    
 }
 
 .hero-title {      
-/*    font-size: 56px;
-    line-height: 1.07;*/
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -159,12 +158,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*---------------BENEFITS---------------*/
-
-.benefits {
-}
-
-.benefits-title {      
-}
 
 .benefits-menu {
     display: flex;
@@ -235,9 +228,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     flex-basis: 100%;    
 }
 
-.team-img {
-}
-
 .team-subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -301,12 +291,6 @@ height: 40px;
 }
 
 /*-------------CUSTOMERS------------------*/
-.customers {}
-
-.section {}
-
-.container {}
-
 .customers-title {
     font-size: 36px;
     line-height: 1.11;
@@ -354,17 +338,12 @@ border-color: var(--color-hover);
 .customers-link:focus .customers-icon {
     fill: var(--color-hover);        
 }
-/*---------------PROJECTS---------------*/
 
-.projects-container{
-}
-    
+/*---------------PROJECTS---------------*/
 .projects {
     padding-top: 96px;
     padding-bottom: 120px;
 }
-
-.projects-title {}
 
 .projects-menu-button {
     display: flex;
@@ -373,9 +352,6 @@ border-color: var(--color-hover);
     justify-content: left;
     flex-wrap: wrap;
     margin-bottom: 72px;
-}
-
-.projects-menu-item-button {     
 }
 
 .projects-button {
@@ -426,9 +402,6 @@ border-color: var(--color-hover);
     transform: translateY(100%);
     overflow: auto;
     transition: transform var(--transform-hover-focus);
-}
-
-.projects-img {    
 }
 
 .projects-subtitle {
@@ -485,7 +458,6 @@ border-color: var(--color-hover);
 }
 
 /*---------------FOOTER---------------*/
-
 .footer-main{
     background: var(--color-main-text);
     padding-top: 96px;
@@ -517,8 +489,7 @@ border-color: var(--color-hover);
 
 .logo-footer-container{
     display: flex;
-    align-items: baseline;
-    justify-content: baseline;    
+    align-items: baseline;    
     flex-wrap: wrap;
 }
 
@@ -576,7 +547,6 @@ color: var(--background-color);
 .subscribe {
     margin: 0 auto;
     text-align:center; 
-    /* width: 100%; */
 }
 
 .subscribe-title {    
@@ -589,15 +559,10 @@ color: var(--background-color);
 
 .subscribe-form {
     display: block; 
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;      */
 }
 
 .subscribe-text{
     border: 1px solid var(--background-color);
-    /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);*/
     border-radius: 4px;
     outline: none;        
     width: 100%;
@@ -848,30 +813,6 @@ overflow: hidden;
     border-color: var(--color-logo-button);
 }
 
-/*.modal-form-checkbox-desc::before{
-    content: '';
-    display: block;
-    width: 16px;
-    height: 16px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px;
-    cursor: pointer;
-    margin-right: 8px;
-}
-
-.modal-form-checkbox:checked + .modal-form-checkbox-desc::before{
-    background-color: var(--color-hover);
-    border: 1px solid #404BBF;
-    border-radius: 2px;
-    background-image: url(../images/checkbox-modal.svg);
-    background-repeat: no-repeat;   
-    background-position: center; 
-}
-
-.modal-form-checkbox:focus + .modal-form-checkbox-desc::before {
-    border-color: var(--color-logo-button);
-}*/
-
 .modal-send-button {
     background-color: var(--color-logo-button);
     align-self: center;
@@ -987,15 +928,11 @@ overflow: hidden;
     color: var(--color-hover);
 }
 
-.mob-address-main {       
-}
-
 .mob-menu-contact-main {
     display: flex;
     gap: 40px;
     flex-direction: column;
 }
-
 
 .mob-menu-email {
     font-weight: 500;
@@ -1013,6 +950,7 @@ overflow: hidden;
 .mob-menu-item-tel {
     color: var(--color-logo-button);
     font-style: normal;
+    font-size: 36px;
 }
 
 .mob-menu-tel {
@@ -1067,8 +1005,8 @@ overflow: hidden;
     visibility: hidden;
     pointer-events: none;
 }
-/*-----------HIDDEN TEXT---------------------*/
 
+/*-----------HIDDEN TEXT---------------------*/
 .visuallyhidden {
     position: absolute;
     width: 1px;

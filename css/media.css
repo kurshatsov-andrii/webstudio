@@ -1,22 +1,29 @@
+@media screen and (max-width: 427px) {
+    .mob-menu-item-tel {
+        font-size: 7vw;
+    }
+
+}
+
 @media screen and (min-width: 428px) {
     .container {
         max-width: 428px;
     }
 
-    /*---------------TEAM---------------*/
+/*---------------TEAM---------------*/
      .team > .container {
      width: 294px; 
 }
 
-.benefits-menu, .team-menu {
+    .benefits-menu, .team-menu {
     gap: 72px 24px;
 }
 
-.customers-list {
+    .customers-list {
     gap: 72px 16px;
 }
 
-.mob-social-list-team {
+    .mob-social-list-team {
     gap: 56px;
 }
 
@@ -28,7 +35,7 @@
         max-width: 768px;
     }
 
-    /*---------------HEADER--------------*/
+/*---------------HEADER--------------*/
         .header-main {
             padding-top: 16px;
             padding-bottom: 16px;
@@ -43,10 +50,8 @@
             align-items: center;
             gap: 40px;
             margin-left: 76px;
-        }
-    
-        .menu-item {}
-    
+        }    
+          
         .menu-item-link {
             font-weight: 500;
             font-size: 16px;
@@ -70,15 +75,16 @@
         .menu-item-address:focus {
             color: var(--color-hover);    
         }
-    .address-main {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.04em;
-        font-style: normal;        
-        color: var(--color-second-text);
-        margin-left: auto;
-        display: block;
+
+        .address-main {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.04em;
+            font-style: normal;        
+            color: var(--color-second-text);
+            margin-left: auto;
+            display: block;
         }
     
         .contact-main {
@@ -118,9 +124,10 @@
             border-radius: 2px;
             background-color: var(--color-hover);
         }
+        
     /*---------------HERO---------------*/
     .hero {    
-    background-image: var(--bg-gradient), url(../images/hero-bg-tab.jpg);
+        background-image: var(--bg-gradient), url(../images/hero-bg-tab.jpg);
     }
 
 @media (min-device-pixel-ratio: 2),
@@ -238,9 +245,10 @@
 .projects-menu-button {
     justify-content: center;
 }
+
 }
 
-/*-------CONTAINER 1158px-----------------*/
+/*-------CONTAINER 1200px-----------------*/
 @media screen and (min-width: 1200px) {
     .container {
         max-width: 1158px;
@@ -286,6 +294,7 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
 /*---------------HERO---------------*/
 .hero {
     padding-top: 188px;
@@ -364,7 +373,6 @@
 }
 
 /*---------------TEAM---------------*/
-
 .team > .container {
     width: 1200px;
 }
