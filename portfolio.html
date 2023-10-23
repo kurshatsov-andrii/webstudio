@@ -67,7 +67,12 @@
             </li>
           </ul>
         </address>
-        <button class="menu-button" type="button" data-menu-open>
+        <button
+          class="menu-button"
+          type="button"
+          data-menu-open
+          aria-label="Menu"
+        >
           <svg class="menu-icon" width="32" height="22">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -75,7 +80,12 @@
       </div>
       <!--MOBILE MENU-->
       <div class="mob-menu is-hidden" data-menu>
-        <button type="button" class="menu-close-btn" data-menu-close>
+        <button
+          type="button"
+          class="menu-close-btn"
+          data-menu-close
+          aria-label="Close menu"
+        >
           <svg class="menu-close-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-modal"></use>
           </svg>
@@ -177,19 +187,41 @@
           <h1 class="projects-title visuallyhidden">All projects</h1>
           <ul class="projects-menu-button list">
             <li class="projects-menu-item-button">
-              <button type="button" class="projects-button">All</button>
+              <button
+                type="button"
+                class="projects-button"
+                aria-label="All projects"
+              >
+                All
+              </button>
             </li>
             <li class="projects-menu-item-button">
-              <button type="button" class="projects-button">Web Site</button>
+              <button
+                type="button"
+                class="projects-button"
+                aria-label="Web Site"
+              >
+                Web Site
+              </button>
             </li>
             <li class="projects-menu-item-button">
-              <button type="button" class="projects-button">App</button>
+              <button type="button" class="projects-button" aria-label="App">
+                App
+              </button>
             </li>
             <li class="projects-menu-item-button">
-              <button type="button" class="projects-button">Design</button>
+              <button type="button" class="projects-button" aria-label="Design">
+                Design
+              </button>
             </li>
             <li class="projects-menu-item-button">
-              <button type="button" class="projects-button">Marketing</button>
+              <button
+                type="button"
+                class="projects-button"
+                aria-label="Marketing"
+              >
+                Marketing
+              </button>
             </li>
           </ul>
           <ul class="projects-menu list">
@@ -673,7 +705,7 @@
                 required
               />
             </label>
-            <button type="submit" class="subscribe-btn">
+            <button type="submit" class="subscribe-btn" aria-label="Subscribe">
               <span class="subscribe-wrapper"
                 >Subscribe
                 <svg class="subscribe-icon" width="24" height="24">
